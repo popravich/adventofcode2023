@@ -38,12 +38,8 @@ def main():
     for idx, line in enumerate(data.splitlines(), 1):
         head, _, card_numbers = line.partition('|')
         _, _, winning_numbers = head.partition(':')
-        winning = set(map(
-            lambda x: int(x), filter(None, winning_numbers.split(' ')),
-        ))
-        card = set(map(
-            lambda x: int(x), filter(None, card_numbers.split(' '))
-        ))
+        winning = set(map(int, filter(None, winning_numbers.split(' '))))
+        card = set(map(int, filter(None, card_numbers.split(' '))))
         count = len(winning & card)
         for _ in range(copies[idx]):
             for x, _ in enumerate(range(count), idx + 1):
