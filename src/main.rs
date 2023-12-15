@@ -21,7 +21,9 @@ fn main() -> anyhow::Result<()> {
     match_day!(day,
         9 => advent2023::day9::main,
         10 => advent2023::day10::main,
-        11 => advent2023::day11::main
+        11 => advent2023::day11::main,
+        12 => advent2023::day12::main,
+        13 => advent2023::day13::main
     );
     Ok(())
 }
