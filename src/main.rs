@@ -23,7 +23,8 @@ fn main() -> anyhow::Result<()> {
         10 => advent2023::day10::main,
         11 => advent2023::day11::main,
         12 => advent2023::day12::main,
-        13 => advent2023::day13::main
+        13 => advent2023::day13::main,
+        14 => advent2023::day14::main
     );
     Ok(())
 }
